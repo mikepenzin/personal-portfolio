@@ -1,2 +1,2 @@
-# personal-portfolio
-My Personal Portfolio 
+# personal-projects-page
+My Personal Projects Page 
