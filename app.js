@@ -35,7 +35,7 @@ app.get("/contact", function(req, res){
 });
 
 app.post("/contact", function(req,res){
-   console.log(req.body.name);
+
    var contact = {
        name:req.body.name,
        email:req.body.email,
@@ -46,7 +46,7 @@ app.post("/contact", function(req,res){
             from: contact.email,
             subject: 'Personal Portfolio',
             text: 'Hello,\n\n' +
-              'This is email from' + contact.name + '(' + contact.email + ')' + '.\n' +
+              'This is email from ' + contact.name + ' (' + contact.email + ')' + '.\n\n' +
               contact.message
           };
     smtpTransport.sendMail(mailOptions, function(err) {
