@@ -310,7 +310,7 @@ hr {
 }
 
 .form-style input[type="submit"],
-.form-style input[type="button"] {
+.form-style button {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -325,7 +325,7 @@ hr {
 }
 
 .form-style input[type="submit"]:hover,
-.form-style input[type="button"]:hover {
+.form-style button:hover {
     background: #6F7A7F;
 }
 
