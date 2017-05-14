@@ -1,181 +1,203 @@
 <% include partials/header %>
 <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 
-        <div class="page-header">
-            <h1>Mike Penzin // My Projects</h1>
-            <!--<h2>A responsive theme for your project on GitHub Pages</h2>-->
-            <a href="/" class="button smoothScroll">About me</a>
-            <a href="#projects" class="button smoothScroll">My Projects</a>
-            <a href="/contact" class="button smoothScroll">Contact me</a>
+    <div class="page-header">
+        <h1>Mike Penzin // My Projects</h1>
+        <a href="/" class="button smoothScroll">About me</a>
+        <a href="#projects" class="button smoothScroll">My Projects</a>
+        <a href="/contact" class="button smoothScroll">Contact me</a>
+    </div>
+    <div class="container" id="projects">
+        <div class="container-header">
+            <h1>My Projects</h1>
         </div>
-        <div class="container" id="projects">
-            <div class="container-header">
-                <h1>My Projects</h1>
+        <p>
+            <h2>
+                <span>// timeago-simple</span>
+            </h2>
+            <h3>
+                <p>
+                    Timeago is a simple plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago" or "1 day ago").
+                </p>
+            </h3>
+            <h2>
+                <i class="devicons devicons-nodejs_small"></i> <i class="devicons devicons-npm"></i> <i class="devicons devicons-javascript_badge"></i> <i class="devicons devicons-bower"></i>
+            </h2>
+            <h4>
+                <p>
+                    Install via NPM: 
+                    <b>npm install timeago-simple --save</b>
+                </p>
+                <p>
+                    Install via Bower: 
+                    <b>bower install timeago-simple --save</b>
+                </p>
+            </h4>
+            <div>
+                <a href="https://www.npmjs.com/package/timeago-simple" class="button-inner" target="_blank"><i class="devicons devicons-nodejs_small" aria-hidden="true"></i> NodeJS Module - NPM</a>
+                <a href="https://github.com/mikepenzin/timeago-simple" class="button-inner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
             </div>
-            <p>
-                <h2>
-                    <span>// timeago-simple</span>
-                </h2>
-                <h3>
-                    <p>
-                        Timeago is a simple plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago" or "1 day ago").
-                    </p>
-                </h3>
-                <h4>
-                    <p>
-                        Install via NPM: 
-                        <b>npm install timeago-simple --save</b>
-                    </p>
-                    <p>
-                        Install via Bower: 
-                        <b>bower install timeago-simple --save</b>
-                    </p>
-                </h4>
-                <div>
-                    <a href="https://www.npmjs.com/package/timeago-simple" class="button-inner" target="_blank"><i class="devicons devicons-nodejs_small" aria-hidden="true"></i> NodeJS Module - NPM</a>
-                    <a href="https://github.com/mikepenzin/timeago-simple" class="button-inner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
+            <div class="fake-browser-ui">
+                <div class="frame">
+                    <span class="bt-1"></span>
+                    <span class="bt-2"></span>
+                    <span class="bt-3"></span>
                 </div>
-                <div class="fake-browser-ui">
-                    <div class="frame">
-                        <span class="bt-1"></span>
-                        <span class="bt-2"></span>
-                        <span class="bt-3"></span>
-                    </div>
-                
-                    <img src="/img/timeago.jpg" alt="yummy.li">
-                </div>
-            </p>
-            <hr>
             
-            <p>
-                <h2>
-                    // <span class="yummyli-logo">yummy.li</span>
-                </h2>
-                <h3>
-                    <p>
-                        Search recipes using ingredients you already have in the kitchen! Used amazing API of <a href="http://food2fork.com" target="_blank">Food2Fork</a>
-                        
-                    </p>
-                </h3>
-                <h4>
-                    <strong>Frontend: </strong>EJS, Bootstrap, jQuery, CSS
-                </h4>
-                <h4>
-                    <strong>Backend: </strong>NodeJS, MongoDB, ExpressJS, PassportJS
-                </h4>
-                <div>
-                    <a href="https://yummyli.herokuapp.com" class="button-inner" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i> Demo</a>
-                    <a href="https://github.com/mikepenzin/yummy.li" class="button-inner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
+                <img src="/img/timeago.jpg" alt="yummy.li">
+            </div>
+        </p>
+        <hr>
+        
+        <p>
+            <h2>
+                // <span class="yummyli-logo">yummy.li</span>
+            </h2>
+            <h3>
+                <p>
+                    Search recipes using ingredients you already have in the kitchen! Used amazing API of <a href="http://food2fork.com" target="_blank">Food2Fork</a>
+                    
+                </p>
+            </h3>
+            <h2>
+                <i class="devicons devicons-html5"></i><i class="devicons devicons-nodejs_small"></i> <i class="devicons devicons-npm"></i> <i class="devicons devicons-javascript_badge"></i> <i class="devicons devicons-bower"></i>
+                <i class="devicons devicons-bootstrap"></i> <i class="devicons devicons-jquery"></i> <i class="devicons devicons-css3"></i> <i class="devicons devicons-mongodb"></i>
+                <i class="devicons devicons-gulp"></i> <i class="devicons devicons-travis"></i> <i class="devicons devicons-github_badge"></i> <i class="devicons devicons-heroku"></i>
+            </h2>
+            <h4>
+                <strong>Frontend: </strong>EJS, Bootstrap, jQuery, CSS, Bower
+            </h4>
+            <h4>
+                <strong>Backend: </strong>NodeJS, MongoDB, ExpressJS, PassportJS
+            </h4>
+            <h4>
+                <strong>Testing: </strong>Mocha, Chai, Istanbul, Coveralls
+            </h4>
+            <h4>
+                <strong>CI: </strong>Gulp, Travis CI, Github, Heroku
+            </h4>
+            <div>
+                <a href="http://yummy.li" class="button-inner" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i> Demo</a>
+                <a href="https://github.com/mikepenzin/yummy.li" class="button-inner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
+            </div>
+            <div class="fake-browser-ui">
+                <div class="frame">
+                    <span class="bt-1"></span>
+                    <span class="bt-2"></span>
+                    <span class="bt-3"></span>
                 </div>
-                <div class="fake-browser-ui">
-                    <div class="frame">
-                        <span class="bt-1"></span>
-                        <span class="bt-2"></span>
-                        <span class="bt-3"></span>
-                    </div>
-                
-                    <img src="/img/yummyli_screenshot_4.png" alt="yummy.li">
+            
+                <img src="/img/yummyli_screenshot_4.png" alt="yummy.li">
+            </div>
+            <div class="fake-browser-ui">
+                <div class="frame">
+                    <span class="bt-1"></span>
+                    <span class="bt-2"></span>
+                    <span class="bt-3"></span>
                 </div>
-                <div class="fake-browser-ui">
-                    <div class="frame">
-                        <span class="bt-1"></span>
-                        <span class="bt-2"></span>
-                        <span class="bt-3"></span>
-                    </div>
-                
-                    <img src="/img/yummyli_screenshot_2.jpg" alt="yummy.li">
+            
+                <img src="/img/yummyli_screenshot_2.jpg" alt="yummy.li">
+            </div>
+        </p>
+        <hr>
+        <p>
+            <h2>
+                <span>// Patatap</span>
+            </h2>
+            <h3>
+                <p>
+                    Fun game, just tap any letter A to Z and create your own music with some special effects :)
+                    Used <a href="http://paperjs.org" target="_blank">PaperJS</a>  and <a href="https://howlerjs.com" target="_blank">HowlerJS</a>
+                </p>
+            </h3>
+            <h2>
+                <i class="devicons devicons-html5"></i> <i class="devicons devicons-css3"></i> <i class="devicons devicons-javascript"></i>
+            </h2>
+            <h4>
+                <strong>Frontend: </strong>HTML, CSS, PaperJS, HowlerJS
+            </h4>
+            <div>
+                <a href="https://patatapapp.herokuapp.com" class="button-inner" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i> Demo</a>
+                <a href="https://github.com/mikepenzin/Patatap-project" class="button-inner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
+            </div>
+            <div class="fake-browser-ui">
+                <div class="frame">
+                    <span class="bt-1"></span>
+                    <span class="bt-2"></span>
+                    <span class="bt-3"></span>
                 </div>
-            </p>
-            <hr>
-            <p>
-                <h2>
-                    <span>// Patatap</span>
-                </h2>
-                <h3>
-                    <p>
-                        Fun game, just tap any letter A to Z and create your own music with some special effects :)
-                        Used <a href="http://paperjs.org" target="_blank">PaperJS</a>  and <a href="https://howlerjs.com" target="_blank">HowlerJS</a>
-                    </p>
-                </h3>
-                <h4>
-                    <strong>Frontend: </strong>HTML, CSS, PaperJS, HowlerJS
-                </h4>
-                <div>
-                    <a href="https://patatapapp.herokuapp.com" class="button-inner" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i> Demo</a>
-                    <a href="https://github.com/mikepenzin/Patatap-project" class="button-inner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
+            
+                <img src="/img/patatap_screenshot.jpg" alt="Patatap">
+            </div>
+        </p>
+        <hr>
+        <p>
+            <h2>
+                <span>// Color Game</span>
+            </h2>
+            <h3>
+                <p>
+                    Color Guessing game. Choose a right cubic with color as RGB in the header :)
+                </p>
+            </h3>
+            <h2>
+                <i class="devicons devicons-html5"></i> <i class="devicons devicons-css3"></i> <i class="devicons devicons-javascript"></i>
+            </h2>
+            <h4>
+                <strong>Frontend: </strong>HTML, CSS and JS 
+            </h4>
+            <div>
+                <a href="https://colorgame.herokuapp.com" class="button-inner"  target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i> Demo</a>
+                <a href="https://github.com/mikepenzin/Color-Guessing-Game" class="button-inner"  target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
+            </div>
+            <div class="fake-browser-ui">
+                <div class="frame">
+                    <span class="bt-1"></span>
+                    <span class="bt-2"></span>
+                    <span class="bt-3"></span>
                 </div>
-                <div class="fake-browser-ui">
-                    <div class="frame">
-                        <span class="bt-1"></span>
-                        <span class="bt-2"></span>
-                        <span class="bt-3"></span>
-                    </div>
-                
-                    <img src="/img/patatap_screenshot.jpg" alt="Patatap">
+            
+                <img src="/img/colorgame_screenshot_1.jpg" alt="Color Game">
+            </div>
+            <div class="fake-browser-ui">
+                <div class="frame">
+                    <span class="bt-1"></span>
+                    <span class="bt-2"></span>
+                    <span class="bt-3"></span>
                 </div>
-            </p>
-            <hr>
-            <p>
-                <h2>
-                    <span>// Color Game</span>
-                </h2>
-                <h3>
-                    <p>
-                        Color Guessing game. Choose a right cubic with color as RGB in the header :)
-                    </p>
-                </h3>
-                <h4>
-                    <strong>Frontend: </strong>HTML, CSS and JS 
-                </h4>
-                <div>
-                    <a href="https://colorgame.herokuapp.com" class="button-inner"  target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i> Demo</a>
-                    <a href="https://github.com/mikepenzin/Color-Guessing-Game" class="button-inner"  target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
+            
+                <img src="/img/colorgame_screenshot_2.jpg" alt="Color Game">
+            </div>
+        </p>
+         <hr>
+        <p>
+            <h2>
+                <span>// ToDo App UI</span>
+            </h2>
+            <h3>
+                <p>
+                    ToDo app prototype UI, using CSS and jQuery.
+                </p>
+            </h3>
+            <h2>
+                <i class="devicons devicons-html5"></i> <i class="devicons devicons-css3"></i> <i class="devicons devicons-jquery"></i>
+            </h2>
+            <h4>
+                <strong>Frontend: </strong>HTML, CSS, jQuery
+            </h4>
+            <div>
+                <a href="https://miketodoapp.herokuapp.com" class="button-inner" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i> Demo</a>
+                <a href="https://github.com/mikepenzin/ToDo-List-App" class="button-inner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
+            </div>
+            <div class="fake-browser-ui">
+                <div class="frame">
+                    <span class="bt-1"></span>
+                    <span class="bt-2"></span>
+                    <span class="bt-3"></span>
                 </div>
-                <div class="fake-browser-ui">
-                    <div class="frame">
-                        <span class="bt-1"></span>
-                        <span class="bt-2"></span>
-                        <span class="bt-3"></span>
-                    </div>
-                
-                    <img src="/img/colorgame_screenshot_1.jpg" alt="Color Game">
-                </div>
-                <div class="fake-browser-ui">
-                    <div class="frame">
-                        <span class="bt-1"></span>
-                        <span class="bt-2"></span>
-                        <span class="bt-3"></span>
-                    </div>
-                
-                    <img src="/img/colorgame_screenshot_2.jpg" alt="Color Game">
-                </div>
-            </p>
-             <hr>
-            <p>
-                <h2>
-                    <span>// ToDo App UI</span>
-                </h2>
-                <h3>
-                    <p>
-                        ToDo app prototype UI, using CSS and jQuery.
-                    </p>
-                </h3>
-                <h4>
-                    <strong>Frontend: </strong>HTML, CSS, jQuery
-                </h4>
-                <div>
-                    <a href="https://miketodoapp.herokuapp.com" class="button-inner" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i> Demo</a>
-                    <a href="https://github.com/mikepenzin/ToDo-List-App" class="button-inner" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Fork it</a>
-                </div>
-                <div class="fake-browser-ui">
-                    <div class="frame">
-                        <span class="bt-1"></span>
-                        <span class="bt-2"></span>
-                        <span class="bt-3"></span>
-                    </div>
-                
-                    <img src="/img/todolist_screenshot.jpg" alt="ToDo App UI">
-                </div>
-            </p>
-        </div>
+            
+                <img src="/img/todolist_screenshot.jpg" alt="ToDo App UI">
+            </div>
+        </p>
+    </div>
 <% include partials/footer %>
