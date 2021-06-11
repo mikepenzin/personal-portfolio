@@ -62,15 +62,15 @@ app.get("*", function(req, res){
     res.render("404");
 });
 
-// var port =  process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//     console.log(`Our app is running on port ${ PORT }`);
 
-// app.listen(port, function(){
-//     console.log("=========================");
-//     console.log("Server has started! ");
-//     console.log("=========================");
 // });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
+app.set( 'port', ( process.env.PORT || 5000 ));
+
+// Start node server
+app.listen( app.get( 'port' ), function() {
+  console.log( 'Node server is running on port ' + app.get( 'port' ));
 });
