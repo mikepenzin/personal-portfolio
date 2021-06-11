@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -23,13 +21,14 @@
     "url": "https://github.com/mikepenzin/personal-portfolio/issues"
   },
   "homepage": "https://github.com/mikepenzin/personal-portfolio#readme",
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "body-parser": "1.18.2",
-    "compression": "^1.6.2",
-    "ejs": "^3.1.6",
-    "express": "^4.14.0",
-    "nodemailer": "1.0.0",
-    "snyk": "^1.35.0"
-  },
-  "snyk": true
+    "compression": "1.6.2",
+    "ejs": "3.1.6",
+    "express": "4.14.0",
+    "nodemailer": "1.0.0"
+  }
 }

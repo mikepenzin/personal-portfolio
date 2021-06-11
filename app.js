@@ -62,10 +62,15 @@ app.get("*", function(req, res){
     res.render("404");
 });
 
-var port =  process.env.PORT || 3000;
+// var port =  process.env.PORT || 3000;
 
-app.listen(port, function(){
-    console.log("=========================");
-    console.log("Server has started! ");
-    console.log("=========================");
+// app.listen(port, function(){
+//     console.log("=========================");
+//     console.log("Server has started! ");
+//     console.log("=========================");
+// });
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
