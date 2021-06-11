@@ -62,8 +62,9 @@ app.get("*", function(req, res){
     res.render("404");
 });
 
+var port =  process.env.PORT || 3000;
 
-app.listen(process.env.PORT || 3000, process.env.IP || '127.0.0.1', function(){
+app.listen(port, function(){
     console.log("=========================");
     console.log("Server has started! ");
     console.log("=========================");
