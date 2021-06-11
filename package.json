@@ -24,9 +24,7 @@
   "engines": {
     "node": "14.x"
   },
-  {
-    "stack": "heroku-20"
-  },
+  "stack": "heroku-20",
   "dependencies": {
     "body-parser": "1.18.2",
     "compression": "1.6.2",
