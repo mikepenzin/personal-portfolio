@@ -6,13 +6,15 @@ var express                 = require("express"),
 
 app.use(compression(9));
 
-var smtpTransport = nodemailer.createTransport('SMTP', {
+var smtpTransport = nodemailer.createTransport({
     service: 'SendGrid',
     auth: {
-          user: process.env.SENDGRID_USERNAME,
-          pass: process.env.SENDGRID_PASSWORD
+          user: process.env.SENDGRID_USERNAME || 'apikey',
+          pass: process.env.SENDGRID_PASSWORD || '3JSDbSoXQASSMbfUtmz8sw',
+          port: 25
       }
 });
+
 
 // to not use .ejs ending
 app.set("view engine","ejs");
@@ -61,7 +63,7 @@ app.get("*", function(req, res){
 });
 
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(process.env.PORT || 3000, process.env.IP || '127.0.0.1', function(){
     console.log("=========================");
     console.log("Server has started! ");
     console.log("=========================");
