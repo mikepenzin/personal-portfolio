@@ -342,3 +342,8 @@ hr {
 .love {
 	color: #be0000;
 }
+
+.disabled {
+    cursor: not-allowed;
+    user-select: none;
+}
